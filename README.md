@@ -26,6 +26,10 @@ The script uses tdcli-1222.
 
 <h3><b>Usage</h3></b>
 
-./tdcli-1222 -s script.lua
+On Telegram, message @JsonDumpBot and find out your chat.id; add it to the script.
 
-Binary included for build compatibility reasons only, please get a binary you trust.
+<pre>./tdcli-1222 -s script.lua</pre>
+
+(You will need to fully authorize yourself the first time.)
+
+Binary tdcli-1222 included for build compatibility reasons only, please get a binary you trust.
