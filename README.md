@@ -10,7 +10,7 @@ In reality it forwards all incoming text messages to your contact's chat in Tele
 
 TODO: Add some sort of hash-based way to sort the messages, add a way to configure exclusions. Add checking freshly edited messages for tags. Process multiple tags in one messages (currently doesn't work).
 
-<h3><b>2. Strikethrough tag.</b></3>
+<h3><b>2. Strikethrough tag.</b></h3>
 
 The script also parses all messages that are outgoing and have just been delivered. If the message contains text inside ~ ~ tags, the script replaces it with its ̶s̶t̶r̶i̶k̶e̶s̶ ̶t̶h̶r̶o̶u̶g̶h̶ equivalent by editing the message for you. Currently there is no convenient way to avoid the marking the message edited because its id may yet change until it's been delivered.
 
