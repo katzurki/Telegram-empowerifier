@@ -1,6 +1,6 @@
 # Telegram-self-bot-for-fancy-stuff
 
-This is basically your regular telegram-cli (tdcli) with a Lua script on top that takes care of things for you quickly and translaprently. You cannot interact with the bot until you write code for it.
+This is basically your regular telegram-cli (tdcli) client authenticated as you, with a Lua script on top that takes care of things for you quickly and transparently. It doesn't do much yet, but it does offer features not yet implemented in official clients.
 
 In its current revision it does these things:
 
@@ -28,7 +28,8 @@ The script uses tdcli-1222.
 
 On Telegram, message @JsonDumpBot and find out your chat.id; add it to the script.
 
-<pre>./tdcli-1222 -s script.lua</pre>
+<pre>chmod +x ./tdcli-1222
+./tdcli-1222 -s script.lua</pre>
 
 (You will need to fully authorize yourself the first time.)
 
