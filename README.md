@@ -15,7 +15,10 @@ TODO: Add more fancy stuff! Add more aliases. Figure out lua_register_function.
 
 Requirements: 
 
-You will need lua-utf8 built for Lua5.2 or higher. If you're getting Lua errors check that your compiler's includes do not include lua/5.1.
+You will need lua-utf8 built for Lua5.2 or higher. If you're getting Lua errors check that your compiler's includes do not include lua/5.1. I tried to keep the rest as vanilla as possible.
 
 The script uses tdcli-1222.
 
+# Usage
+
+tdcli-1222 -s script.lua
