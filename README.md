@@ -1,6 +1,8 @@
 # Telegram-self-bot-for-fancy-stuff
 
-This is basically your regular telegram-cli with a Lua script that takes care of things. In its current revision it does two things:
+This is basically your regular telegram-cli (tdcli) with a Lua script on top that takes care of things for you quickly and translaprently. You cannot interact with the bot until you write code for it.
+
+In its current revision it does these things:
 
 <h3><b>1. Pseudo Undelete capability.</b></h3>
 
