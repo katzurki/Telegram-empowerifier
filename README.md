@@ -1,6 +1,7 @@
-# Telegram-self-empowerifier
+# Telegram Empowerifier
 
-There are bots and the Bot API, and there are regular user accounts that can be made to act like bots. In fact, setting up your main account as a user bot allows you some enhanced functionality (more like dirty hacks). Right now it allows you to sort of Undelete deleted messages, and to add Strikethrough capability to the standard markup options.
+<h3>TL;DR</h3>
+It doesn't use Bot API. This script is tdcli authorized to your account and watching your messages. It forwards every text message to your Saved Messages, thereby implementing a crude but working Undelete capability. It also watches for markup tags in your messages. Just as you would add **text** to make text bold, you can use ~text~ to mark it up as struck-through.
 
 <h3><b>1. Pseudo Undelete</b></h3>
 
@@ -12,24 +13,28 @@ TODO: Add some sort of hash-based way to sort the messages, add a way to configu
 
 The script also parses all messages that are outgoing and have just been delivered. If the message contains text inside ~ ~ tags, the script replaces it with its ̶s̶t̶r̶i̶k̶e̶s̶ ̶t̶h̶r̶o̶u̶g̶h̶ equivalent by editing the message for you. Currently there is no convenient way to avoid the (edited) mark.
 
-ADDED: Support for UTF8 strikethrough
+ADDED: Support for UTF8 strikethrough—doesn't properly handle UTF16 as of right now.
 
 TODO: Add more fancy stuff! Add more aliases. Figure out lua_register_function.
 
 <h3><b>Requirements</h3></b>
 
-You will need lua-utf8 built for Lua5.2 or higher. Currently, luarocks seems to want to compile it with lua5.1 headers. I just did it manually.
+Make sure your luarocks is set up to use Lua >= 5.2. 
 
-The script uses tdcli-1222 from valtman.name/telegram-cli.
+You need the utf8 rock for UTF8 support:
 
-<h3><b>Usage</h3></b>
+<pre>luarocks install utf8</pre>
+
+The script uses tdcli-1222 or higher from valtman.name/telegram-cli.
 
 On Telegram, message @JsonDumpBot and find out your chat.id; add it to the script.
+
+<h3><b>Usage</h3></b>
 
 <pre>chmod +x ./tdcli-1222
 ./tdcli-1222 -s script.lua</pre>
 
-(You will need to fully authorize yourself the first time.)
+(You will need to fully authorize yourself the first time this runs.)
 
 TODO: Switch to MadelineProto!
 
