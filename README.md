@@ -11,7 +11,7 @@ TODO: Add some sort of hash-based way to sort the messages, add a way to configu
 
 <h3><b>2. Strikethrough markup</b></h3>
 
-The script also parses all messages that are outgoing and have just been delivered. If the message contains text inside ~ ~ tags, the script replaces it with its ̶s̶t̶r̶i̶k̶e̶s̶ ̶t̶h̶r̶o̶u̶g̶h̶ equivalent by editing the message for you. Currently there is no convenient way to avoid the (edited) mark.
+The script also parses all messages that are outgoing and have just been delivered. If the message contains text inside ~ ~ tags, the script replaces it with its ̶̶̶s̶̶t̶̶r̶̶i̶̶k̶̶e̶̶s̶̶ ̶̶t̶̶h̶̶r̶̶o̶̶u̶̶g̶̶h̶̶  equivalent by editing the message for you. Currently there is no convenient way to avoid the (edited) mark.
 
 ADDED: Support for UTF8 strikethrough—doesn't properly handle UTF16 as of right now.
 
